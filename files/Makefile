@@ -10,8 +10,9 @@ FLAGS += -Werror
 FLAGS += -O1
 PROGRAMER = arduino 
 
-
 all:
+	$(COMPILER) $(SRC) -o $(OBJ) -O ihex ${OBJ}.bin ${OBJ}.hex $(FLAGS)
+	avrdude -p $(MCU) -c $(ROGRAMER) -U flash:w:$(OBJ):i -F -P usb
 
 compile:
 	$(COMPILER) $(SRC) -o $(OBJ) -O ihex ${OBJ}.bin ${OBJ}.hex $(FLAGS)
@@ -19,7 +20,5 @@ compile:
 flash:
 	avrdude -p $(MCU) -c $(ROGRAMER) -U flash:w:$(OBJ):i -F -P usb
 
-clear:
-
-
-
+clean:
+	rm -f *.bin *.hex
