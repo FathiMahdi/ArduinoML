@@ -12,9 +12,9 @@ data_frame = pd.read_csv(dataset)
 print(data_frame)
 X_train = data_frame.iloc[:,0]
 Y_train = data_frame.iloc[:,1]
-X_train =  X_train.to_numpy()
+X_train = X_train.to_numpy()
 X_train = X_train.reshape(-1, 1)
-Y_train =  Y_train.to_numpy()
+Y_train = Y_train.to_numpy()
 print('X: ',X_train)
 print('Y: ',Y_train)
 # Model Fit

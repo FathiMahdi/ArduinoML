@@ -8,6 +8,7 @@
 #include <util/delay.h>
 #include <avr/wdt.h>
 #include <math.h>
+#include <model.h>
 
 int main()
 {
