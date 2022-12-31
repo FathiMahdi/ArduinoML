@@ -2,7 +2,7 @@
 
 ML for 8-bit microcontrollers
 
-<p align="center">             
+<p align="left">             
   <img src="https://github.com/FathiMahdi/ArduinoML/blob/main/Docs/diagram.png">
 </p>
 
