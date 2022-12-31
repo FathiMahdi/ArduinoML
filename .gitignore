@@ -10,6 +10,11 @@ __pycache__/
 *.o
 run
 
+#EXE
+
+*.bin
+*.hex
+
 # Distribution / packaging
 .Python
 build/
