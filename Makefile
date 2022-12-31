@@ -14,6 +14,7 @@ compile:
 	$(COMPILER) $(SRC) $(OBJ) $(FLAGS)
 
 flash:
+	avrdude -p $(MCU) -c $(ROGRAMER) -U flash:w:$(OBJ):i -F -P usb
 
 clear:
 
