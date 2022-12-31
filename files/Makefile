@@ -15,7 +15,7 @@ all:
 	avrdude -p $(MCU) -c $(ROGRAMER) -U flash:w:$(OBJ):i -F -P usb
 
 compile:
-	$(COMPILER) $(SRC) -o $(OBJ) -O ihex ${OBJ}.bin ${OBJ}.hex $(FLAGS)
+	$(COMPILER) $(SRC) -o $(OBJ) -0 ihex ${OBJ}.bin ${OBJ}.hex $(FLAGS)
 
 flash:
 	avrdude -p $(MCU) -c $(ROGRAMER) -U flash:w:$(OBJ):i -F -P usb
