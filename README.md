@@ -17,13 +17,25 @@ pip install -r requirements.txt
 2- install AVR compiler
 
 ```shell
-sudo apt install avrdude
+sudo apt-get install gcc-avr avr-libc avrdude
 ```
 
 ## Train
 
+```shell
+python3 files/train.py
+```
+
 ## Compile
 
-## Run
+```shell
+make compile
+```
+
+## Flash
+
+```shell
+make flash
+```
 
 ## Todo
