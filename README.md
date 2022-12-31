@@ -2,6 +2,10 @@
 
 ML for 8-bit microcontrollers
 
+<p align="center">             
+  <img src="https://github.com/FathiMahdi/ArduinoML/blob/main/Docs/diagram.png">
+</p>
+
 ## Dependences
 
 1- install python dependences
